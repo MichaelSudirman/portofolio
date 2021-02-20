@@ -1,23 +1,23 @@
 import React from 'react'
-import CoverPage from '../components/CoverPage'
+import CoverSection from '../components/CoverSection'
 import Navbar from '../components/Navbar'
-import AboutPage from '../components/AboutPage'
-import BackgroundPage from '../components/BackgroundPage'
-import ExperiencePage from '../components/ExperiencePage'
-import ProjectPage from '../components/ProjectPage'
-import Contact from '../components/Contact'
+import AboutSection from '../components/AboutSection'
+import EducationSection from '../components/EducationSection'
+import ExperienceSection from '../components/ExperienceSection'
+import ProjectSection from '../components/ProjectSection'
+import Contact from '../components/ContactSection'
 
-const main = () => {
+const Index = () => {
     return (
         <div>
-            <CoverPage />
-            <AboutPage />
             <Navbar />
-            <BackgroundPage />
-            <ExperiencePage />
-            <ProjectPage />
+            <CoverSection />
+            <AboutSection />
+            <EducationSection />
+            {/* <ExperienceSection />
+            <ProjectSection /> */}
             <Contact />
         </div>
     )
 }
-export default main
+export default Index

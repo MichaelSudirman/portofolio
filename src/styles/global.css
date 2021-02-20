@@ -1,0 +1,13 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.theme-background {
+    color: #1F2833;
+}
+.theme-light {
+    color: #66FCF1;
+}
+.theme-dark {
+    color: #45A29E;
+}

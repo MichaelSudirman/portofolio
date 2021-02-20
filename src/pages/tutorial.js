@@ -51,7 +51,7 @@ const User = props => (
   </UserWrapper>
 )
 
-export function UsersList() {
+function UsersList() {
   return (
     <Container>
       <h1>About Styled Components</h1>
@@ -69,3 +69,5 @@ export function UsersList() {
     </Container>
   )
 }
+
+export default UsersList
