@@ -5,7 +5,7 @@ services:
       # context: ./client
       # dockerfile: Dockerfile
     ports:
-      - "80:80"
+      - "3001:80"
     environment:
       - VIRTUAL_HOST=mikesudirman.me
       - LETSENCRYPT_HOST=mikesudirman.me
