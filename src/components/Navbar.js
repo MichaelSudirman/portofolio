@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { Link } from "gatsby"
 import { Navbar as RBNav } from 'react-bootstrap'
 
 import logoIcon from '../assets/icon.png'
@@ -13,8 +13,6 @@ top: 0;
 left: 0;
 height: 70px;
 background-color: #1F2833;
-`
-const styledNav = styled(RBNav)`
 `
 const NavLink = styled.div`
 font-size:22px;
@@ -29,13 +27,17 @@ const Navbar = () => {
                     <img width={48} height={48} src={logoIcon} alt="Logo" />
                 </RBNav.Brand>
 
-                <RBNav.Collapse className="justify-content-end ">
-                    <NavLink className='theme-light'>
-                        Resume
-                    </NavLink>
+                <RBNav.Collapse className="justify-content-end">
+                    <Link to="/resume/" style={{textDecoration:"none"}}>
+                        <NavLink className='theme-light'>
+                            Resume
+                        </NavLink>
+                    </Link>
+                    <Link to="/blog/" style={{textDecoration:"none"}}>
                     <NavLink className='theme-light'>
                         Blog
                     </NavLink>
+                    </Link>
                 </RBNav.Collapse>
             </RBNav>
         </Container>

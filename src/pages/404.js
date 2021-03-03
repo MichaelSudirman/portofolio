@@ -49,14 +49,15 @@ const Test = styled.div`
 `
 const CoverSection = () => {
     return (
-        <>
-            <Container>
-                <TitleContainer className='theme-dark'>
-                    <VerticalBorder />
-                    <Text className='theme-light'>Coming Soon !</Text>
-                </TitleContainer>
-            </Container>
-        </>
+        <Container>
+            <TitleContainer className='theme-dark'>
+                <VerticalBorder />
+                <div>
+                    <Text className='theme-light'>404</Text>
+                    <Text>The page that you are looking for does not exist.</Text>
+                </div>
+            </TitleContainer>
+        </Container>
     )
 }
 

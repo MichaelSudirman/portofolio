@@ -1,9 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-
-
+// Bootstrap imports
 import {
-    Container as RBContainer,
 } from 'react-bootstrap'
 
 
@@ -13,35 +11,52 @@ height: 100vh;
 width: 100wh;
 display: flex;
 align-items: center;
+justify-content: center;
+`
+const TitleContainer = styled.div`
+display: flex;
+flex-direction: row;
+font-size: 64px;
+padding: 16px;
+flex-grow: 1
+@media screen and (max-width: 768px) {
+    font-size: 48px;
+    padding: 10px;
+}
+`
+const VerticalBorder = styled.div`
+@media screen and (min-width: 768px) {
+    height: inherit;
+    margin: 10px;
+    width: 3px;
+    background-color: #45A29E;
+    border-radius: 10%;
+    margin: 12px;
+}
 `
 const Row = styled.div`
 display: flex;
-direction: row;
-padding-right: 2px;
-
-@media screen and (max-width: 1200px) {
-    direction: column;
+flex-direction: row;
+`
+const Text = styled.p`
+font-size: 64px;
+@media screen and (max-width: 768px) {
+    font-size: 48px;
 }
 `
-const TitleContainer = styled.div`
-font-size: 64px;
-border-left-style: solid;
-border-left-color: #45A29E;
-padding: 16px;
-flex-grow: 1
-`
+const Test = styled.div`
 
+`
 const CoverSection = () => {
     return (
         <Container>
-
-            <div style={{
-                flexGrow: 1
-            }} />
             <TitleContainer className='theme-dark'>
-                <p>Hello!</p>
-                <Row><p>I'm&nbsp;</p><p className='theme-light'>Michael Sudirman</p><p>.</p></Row>
-                <p>Welcome to my website</p>
+                <VerticalBorder />
+                <div>
+                    <Text>Hello!</Text>
+                    <Row><Text>I'm&nbsp;<span className='theme-light'>Michael Sudirman</span>.</Text></Row>
+                    <Text>Welcome to my website</Text>
+                </div>
             </TitleContainer>
         </Container>
     )
