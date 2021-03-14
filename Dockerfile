@@ -12,7 +12,7 @@
 # COPY --from=builder /app/public /usr/share/nginx/html
 
 
-FROM node:15.7-alpine3.10 as builder
+FROM node:14.5 AS builder
 
 WORKDIR /app
 COPY package.json package-lock.json ./

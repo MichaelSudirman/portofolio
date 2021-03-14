@@ -5,8 +5,8 @@ services:
     ports:
       - "3001:80"
     environment:
-      - VIRTUAL_HOST=mikesudirman.me
-      - LETSENCRYPT_HOST=mikesudirman.me
+      - VIRTUAL_HOST=michaelsudirman.com
+      - LETSENCRYPT_HOST=michaelsudirman.com
     networks:
       - proxy
 

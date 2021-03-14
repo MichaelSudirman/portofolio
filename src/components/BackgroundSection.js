@@ -160,7 +160,7 @@ const BackgroundSection = () => {
                     <VerticalBorder />
                     <BodyContent>
                         <p className={"h2 font-weight-normal"}>Vendue</p>
-                        <p className={"h4 font-weight-normal"}><Link href= "https://vendue.mikesudirman.me/" target="_blank">Url Link</Link> - <Link href= "https://github.com/MichaelSudirman/vendue" target="_blank">Git Repository</Link></p>
+                        <p className={"h4 font-weight-normal"}><Link href= "https://vendue.michaelsudirman.com/" target="_blank">Url Link</Link> - <Link href= "https://github.com/MichaelSudirman/vendue" target="_blank">Git Repository</Link></p>
                         <ul>
                             <li className={"h5 font-weight-normal"}>Created an auction website using Flask, ReactJS, and MongoDB</li>
                             <li className={"h5 font-weight-normal"}>Integrated RabbitMQ to queue auction timer and GCP Bucket for storing image</li>
@@ -176,7 +176,7 @@ const BackgroundSection = () => {
                     <VerticalBorder />
                     <BodyContent>
                         <p className={"h2 font-weight-normal"}>Socmed</p>
-                        <p className={"h4 font-weight-normal"}><Link href= "https://socmed.mikesudirman.me/" target="_blank">Url Link</Link> - <Link href= "https://github.com/MichaelSudirman/soc-med-fe" target="_blank">Git Repo Front-end</Link> - <Link href= "https://github.com/MichaelSudirman/soc-med-react-firebase-client" target="_blank">Git Repo Back-end</Link></p>
+                        <p className={"h4 font-weight-normal"}><Link href= "https://socmed.michaelsudirman.com/" target="_blank">Url Link</Link> - <Link href= "https://github.com/MichaelSudirman/soc-med-fe" target="_blank">Git Repo Front-end</Link> - <Link href= "https://github.com/MichaelSudirman/soc-med-react-firebase-client" target="_blank">Git Repo Back-end</Link></p>
                         <ul>
                             <li className={"h5 font-weight-normal"}>Created a social media website using Express JS and React JS Redux</li>
                             <li className={"h5 font-weight-normal"}>Uses Google Firebase integration to store backend functions and storage</li>
